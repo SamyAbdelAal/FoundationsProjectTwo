@@ -3,13 +3,16 @@
 from components import Store, Product
 
 stores = []
+
+
 def create_product(store, name, description, price):
     product = Product(name, description, price)
     store.add_product(product)
 
-zara = Store("Zara")
-nike = Store("Nike")
-apple = Store("Apple")
+
+zara = Store("zara")
+nike = Store("nike")
+apple = Store("apple")
 stores.append(zara)
 stores.append(nike)
 stores.append(apple)
@@ -28,7 +31,7 @@ create_product(apple, "iPhone 5s", "128GB Silver", 250)
     # use the create_product() function
     # which takes the store you want to add the product to, and the product details
 
-pharmacy = Store("Pharmacy")
+pharmacy = Store("pharmacy")
 stores.append(pharmacy)
 create_product(pharmacy, "Melatonin 5mg", "50 pills", 5)
 create_product(pharmacy, "Melatonin 10mg", "50 pills", 8)
